@@ -1,0 +1,55 @@
+@id,@lon,@lat,@user,name,name:en,website,operator,brand,opening_hours,wheelchair,wheelchair:description,email,phone,fax,addr:country,addr:city,addr:street,addr:housenumber,addr:postcode,internet_access:fee,stars,rooms,smoking,outdoor_seating,pets_allowed,swimming_pool,network,payment:cash,payment:mastercard,payment:visa,payment:american_express,payment:diners_club,payment:maestro,building
+416417189,21.454931,41.9899385,Hakan Koyunlular,hotel porta,,http://www.hotelporta.com.mk/,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+416452220,21.4198508,41.9899482,borces,Хотел 7,Hotel 7,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+1378197244,21.440152,41.980192,MatejMecka,Hotel Orange Inn,,https://www.booking.com/hotel/mk/orange-inn.en-gb.html?sid=1ddd35f0ef4f22510d37f152a78ce4a3,,,,,,info@orangeinn.com.mk,38922772254,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+1381642413,21.4249793,41.9801123,borces,Хотел Турена,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+1381642430,21.4262323,41.9843835,borces,Александар,Aleksandar,,,,,,,,,,,Skopje,Востаничка,24,,No Info Available,,,,,,,,,,,,,,
+1499057720,21.4329531,41.9948912,Robert Whittaker,Hotel City Central International,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+3341289751,21.4315713,41.9952955,bjankuloski,Пелистер,,https://www.pelisterhotel.com.mk/,,,,,,,,,,Скопје,Плоштад Македонија,,1000,No Info Available,,,,,,,,,,,,,,
+3361174898,21.4380987,41.9994486,birdymaps,Hotel De KOKA,,www.hoteldekoka.mk,Hotel De KOKA,,,,,info@hoteldekoka.mk,38923112200,,MK,Skopje,Gotse Deltchev,5,1000,Yes,3,36,separated,,,,,yes,,yes,yes,,yes,
+3673044667,21.4303313,41.995617,borces,Square,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+3712250373,21.441776,41.9945457,Lauvimui,Hotel Kej,,,,,,,,,,,,Skopje,Кеј 13 Ноември,38,,No Info Available,,,,,,,,,,,,,,
+3832632324,21.4201316,41.9870966,borces,Тасино Чешмиче,Tasino Cheshmiche,,,,,,,,,,,Skopje,Белградска,28,,No Info Available,,,,,,,,,,,,,,
+4126731457,21.4343571,41.9973371,Dekacc,Lounge Bar Divan,,,Hotel Stone Bridge,,,,,,,,,Skopje,,,,No Info Available,,,separated,yes,,,,,,,,,,
+4225391392,21.4157891,41.9968442,borces,Влахо,,,,,24/7,,,,38926092301,,,Skopje,9 Мај,3,,No Info Available,,,,,,,,,,,,,,
+4540759892,21.4215251,41.9816082,bjankuloski,Хотел Скала,Skala Hotel,,,,,,,,,,,Skopje,Тодор Александров,,1000,No Info Available,,,,,,,,,,,,,,
+4757336509,21.416879,41.9986179,antal,Hotel Elite Plaza,,,,,,,,,,,,Skopje,,,,Yes,,,,,,,,,,,,,,
+5110937025,21.4295391,41.9930093,Dekacc,Hotel Elsa,,,,,,,,,,,,Skopje,луј пастер,,,No Info Available,,,,,,,,,,,,,,
+5176232883,21.4199449,41.9926997,borces,Queen’s Hotel,,http://www.queenshotel.com.mk,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+6775567585,21.4185394,41.9856205,Zbychozdzich,Villa Alexander,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+6814231698,21.4375911,41.9996627,YunDi88,De koka,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+6821158685,21.4344666,41.9973603,YunDi88,Stone Bridge,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+9200216339,21.4234219,41.9974029,YunDi88,Ani,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+9200216567,21.429975,41.9955032,YunDi88,Cara,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,
+1E+15,21.4360308,41.9945973,MatejMecka,Holiday Inn Skopje,Holiday Inn,https://www.holiday-inn.com/skopje,Holiday Inn,Holiday Inn,24/7,yes,,hiskopje@holiday-inn.com.mk,+389 2 3292929,+389 2 3115503,MK,Cкoпje,Моша Пијаде,2,1000,No,4,178,separated,,,,,,yes,yes,yes,yes,,hotel
+1E+15,21.4346231,41.9973471,Dekacc,Hotel Stone Bridge,,http://stonebridge-hotel.com/,,,,,,info@stonebridge-hotel.com,+389 2 3244900,+389 2 3244901,MK,Cкoпje,Кеј Димитар Влахов,1,1000,No,5,40,,,,,,,,,,,,hotel
+1E+15,21.4293261,41.996934,TheBlackMan,Хотел Јадран,Hotel Jadran,,Македонијатурист,,,,,,,,MK,Cкoпje,27 Март,8,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4192278,41.9950478,ggulabovski,Хотел Мола,,,,,,,,,,,MK,Cкoпje,Шумадиска,1,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4160587,41.9952743,Svetle,Rose Diplomatique,,http://www.rosediplomatique.com.mk,,,,,,,,,MK,Cкoпje,Роза Луксембург,13,1000,No Info Available,,,,,,,,,,,,,,hotel
+1E+15,21.4386311,41.9993482,TheBlackMan,Super 8,,,,,,,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4139304,41.9905086,TheBlackMan,Аристократ палас,,,,,,,,,,,MK,Cкoпje,Елисие Поповски Марко,59,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4245369,41.9986578,Dekacc,Дувет,Duvet,,,,,,,,,,MK,Cкoпje,Наум Наумовски Борче,40,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4195378,41.9944376,Dekacc,Сити 5,City 5,,,,,,,,,,MK,Cкoпje,Митрополит Теодосиј Гологанов,44,1000,No Info Available,,,,,,,,,,,,,,office
+1E+15,21.4294965,41.996303,TheBlackMan,Хотел Дувет,Duvet Hotel,,,,,,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4531442,41.9987895,habitbushi,Хотел Континентал,Hotel Continental,,,,,yes,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4246922,41.9995415,b-jazz-bot,Хотел Амбасадор,Hotel Ambasador,https://hotelambasador-sk.com.mk/,,,,,,info@hotelambasador-sk.com.mk,+389 2 3121383,+389 2 3215729,MK,Cкoпje,Пиринска,38,1000,No,,,,,,,,,,,,,,hotel
+1E+15,21.4161557,41.9897289,borces,Викторија,,,,,,,,,,,MK,Cкoпje,Славе Деловски,18,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4156286,41.9858984,-WI-,Вила Водно,Vila Vodno,,,,,,,,,,MK,Cкoпje,Периша Савелиќ,8,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4194063,41.9835314,borces,Панорама Резиденс,,,,,,,,,,,,Skopje,Тодор Александров,,,,,,,,,,,,,,,,,
+1E+15,21.4226094,41.9953523,Corban8,Лаки,Laki,,,,,,,,,,MK,Cкoпje,Аминта Трети,79,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4304826,41.9961031,MatejMecka,Хотел Мериот Скопје,Marriott Skopje,,Marriott,Marriott,,,,,+389 2 510 2510,+389 2 510 2513,MK,Cкoпje,,,1000,Customers,5,164,,,yes,indoor,,,,,,,,hotel
+1E+15,21.4185347,41.9856193,TheBlackMan,Вила Рагуза,Vila Raguza,,,,,,,,,,MK,Cкoпje,Тодор Александров,13a,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4202964,41.9835098,Corban8,Panoramika Design Hotel,,,,,,,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4391786,41.9966358,TheBlackMan,Opera House Hotel Skopje,,http://operahousehotel.mk,,,,,,info@operahousehotel.mk,+389 (0)2 3 22 50 07,,MK,Cкoпje,1733  24,1737,1000,No,4,,,,,,,,,,,,,hotel
+1E+15,21.4396919,41.9968066,toygarlk,Luxury Skopje Apartments,,http://luxuryskopjeapartments.com/,otel,,,,,info@Lsarent.com,+389 (0)71 38 68 11,,MK,Cкoпje,Пајко Маало,6,1000,No,,,,,,,,,,,,,,apartments
+1E+15,21.4295089,41.9955022,TheBlackMan,Solun,,,,,,,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,hotel
+1E+15,21.420412,41.98537,Toyota_79,Hotel Europe,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,commercial
+1E+15,21.4371703,41.9902618,mariegorman,Премиер,Premier,,,,,,,,,,,Skopje,Јосиф Јосифовски Свештарот,36,,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4268082,41.9839098,TheBlackMan,Вила Силија,Vila Silija,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,hotel
+1E+15,21.4261639,41.9835503,TheBlackMan,Hi Skopje Hostel,,,,,,,,,,,MK,Cкoпje,Рилски Конгрес,26,1000,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4259318,41.9859181,TheBlackMan,Хотел Леонардо,,http://www.hotel-leonardo.com.mk/,,,,,,info@hotel-leonardo.com.mk,+389 2 3177517,,MK,Cкoпje,Партенија Зографски,19,1000,No,3,,,,,,,,,,,,,hotel
+1E+15,21.4176535,41.9985469,Toyota_79,Glam,,,,,,,,,,,MK,Cкoпje,,,1000,No Info Available,,,,,,,,,,,,,,hotel
+1E+15,21.4492737,41.9973856,_Poliwrath_,VIP,,,,,,,,,,,,Skopje,,,,No Info Available,,,,,,,,,,,,,,yes
+1E+15,21.4445839,41.9941814,Václav Fanta,Apart Hotel Kalonis,,,,,,,,,,,,Cкoпje,Велешка,,1000,Yes,3,,,,,,,,,,,,,yes
+1E+15,21.4297123,41.9970513,SilverStorm03,Ibis Skopje City Center,,https://www.accorhotels.com/nl/hotel-9672-ibis-skopje-city-center/index.shtml,Accor Group,,,,,H9672@accor.com,38923123700,,MK,Cкoпje,Васил Иљоски,55,1000,No Info Available,,,,,,,,,,,,,,house
+1E+15,21.4294537,41.991871,Makedonium,Хотел Бристол,Hotel Bristol,,,,,,,,,,,Скопје,Македонија,1,1000,No Info Available,,,,,,,,,,,,,,yes

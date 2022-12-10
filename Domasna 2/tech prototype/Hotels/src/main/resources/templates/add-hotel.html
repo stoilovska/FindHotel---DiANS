@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Додади Хотел</title>
+    <style>
+        /*.content{*/
+        /*    background-image: url("img/pozadina.jpg");*/
+        /*    background-repeat: no-repeat;*/
+        /*    !*background-attachment: fixed;*!*/
+        /*    background-size: 1522px 930px;*/
+        /*    width: 1200px;*/
+        /*    height: 708px;*/
+        /*}*/
+    </style>
+</head>
+<body style="background: bisque" class="content">
+<th:block xmlns:th="http://www.thymeleaf.org">
+
+    <footer style="margin-left: 488px">
+        <a class="nav-link active" href="/home"
+           style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+            Почетна
+        </a>
+        <a class="nav-link active" href="/hotels"
+           style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+            Хотели
+        </a>
+
+        <a class="btn btn-success btn-sm-ml-3" href="/aboutUs"
+           style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+            <i class="fa fa-shopping-cart"></i> За нас
+        </a>
+
+        <a class="btn btn-light btn-sm-ml-3" href="/contact"
+           style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+            <i class="fa fa-shopping-cart"></i> Контакт
+        </a>
+
+    </footer>
+    <br>
+    <br>
+
+    <div class="container" style="margin-left: 518px">
+        <div class="row">
+            <div class="col-md-5">
+                <form action="/hotels/add" method="POST">
+                    <div class="form-group">
+                        <!--                        name , lon , lat , web_site , operator , opening_hours , email , phone , country , city , street ,-->
+                        <!--                        house_number;-->
+                        <!--                        internet_access ,  stars , rooms , smoking , swimming_pool , building-->
+                        <label for="name">Име на хотелот</label>
+                        <input type="text"
+                               style="margin-left: 150px"
+                               class="form-control"
+                               id="name"
+                               name="name"
+                               th:value="(${hotel} != null ? ${hotel.getName()} : '')"
+                               required
+                               placeholder="Enter hotel name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="lon">Lon</label>
+                        <input type="text"
+                               style="margin-left: 230px"
+                               class="form-control"
+                               id="lon"
+                               name="lon"
+                               th:value="(${hotel} != null ? ${hotel.getLon()} : '')"
+                               required
+                               placeholder="Enter lon">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="lat">Lat</label>
+                        <input type="text"
+                               style="margin-left: 232px"
+                               class="form-control"
+                               id="lat"
+                               name="lat"
+                               th:value="(${hotel} != null ? ${hotel.getLat()} : '')"
+                               required
+                               placeholder="Enter lat">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="web_site">Веб сајт</label>
+                        <input type="text"
+                               style="margin-left: 199px"
+                               class="form-control"
+                               id="web_site"
+                               name="web_site"
+                               th:value="(${hotel} != null ? ${hotel.getWeb_site()} : '')"
+                               required
+                               placeholder="Enter web_site">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="operator">Оператор</label>
+                        <input type="text"
+                               style="margin-left: 192px"
+                               class="form-control"
+                               id="operator"
+                               name="operator"
+                               th:value="(${hotel} != null ? ${hotel.getOperator()} : '')"
+                               required
+                               placeholder="Enter operator">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="opening_hours">Часови отворен</label>
+                        <input type="text"
+                               style="margin-left: 150px"
+                               class="form-control"
+                               id="opening_hours"
+                               name="opening_hours"
+                               th:value="(${hotel} != null ? ${hotel.getOpening_hours()} : '')"
+                               required
+                               placeholder="Enter Opening hours">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="email">Емаил</label>
+                        <input type="text"
+                               style="margin-left: 210px"
+                               class="form-control"
+                               id="email"
+                               name="email"
+                               th:value="(${hotel} != null ? ${hotel.getEmail()} : '')"
+                               required
+                               placeholder="Enter email">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="phone">Телефонски број</label>
+                        <input type="text"
+                               style="margin-left: 140px"
+                               class="form-control"
+                               id="phone"
+                               name="phone"
+                               th:value="(${hotel} != null ? ${hotel.getPhone()} : '')"
+                               required
+                               placeholder="Enter phone">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="country">Држава</label>
+                        <input type="text"
+                               style="margin-left: 204px"
+                               class="form-control"
+                               id="country"
+                               name="country"
+                               th:value="(${hotel} != null ? ${hotel.getCountry()} : '')"
+                               required
+                               placeholder="Enter country">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="city">Град</label>
+                        <input type="text"
+                               style="margin-left: 223px"
+                               class="form-control"
+                               id="city"
+                               name="city"
+                               th:value="(${hotel} != null ? ${hotel.getCity()} : '')"
+                               required
+                               placeholder="Enter city">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="street">Улица</label>
+                        <input type="text"
+                               style="margin-left: 210px"
+                               class="form-control"
+                               id="street"
+                               name="street"
+                               th:value="(${hotel} != null ? ${hotel.getStreet()} : '')"
+                               required
+                               placeholder="Enter street">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="house_number">Број на улица</label>
+                        <input type="text"
+                               style="margin-left: 160px"
+                               class="form-control"
+                               id="house_number"
+                               name="house_number"
+                               th:value="(${hotel} != null ? ${hotel.getHouse_number()} : '')"
+                               required
+                               placeholder="Enter house number">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="internet_access">Достапност на интернет</label>
+                        <input type="text"
+                               style="margin-left: 90px"
+                               class="form-control"
+                               id="internet_access"
+                               name="internet_access"
+                               th:value="(${hotel} != null ? ${hotel.getInternet_access()} : '')"
+                               required
+                               placeholder="Enter internet access">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="stars">Ѕвезди</label>
+                        <input type="text"
+                               style="margin-left: 207px"
+                               class="form-control"
+                               id="stars"
+                               name="stars"
+                               th:value="(${hotel} != null ? ${hotel.getStars()} : '')"
+                               placeholder="Enter stars">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="rooms">Соби</label>
+                        <input type="text"
+                               style="margin-left: 218px"
+                               class="form-control"
+                               id="rooms"
+                               name="rooms"
+                               th:value="(${hotel} != null ? ${hotel.getRooms()} : '')"
+                               placeholder="Enter rooms">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="smoking">Дозвола за пушење</label>
+                        <input type="text"
+                               style="margin-left: 120px"
+                               class="form-control"
+                               id="smoking"
+                               name="smoking"
+                               th:value="(${hotel} != null ? ${hotel.getSmoking()} : '')"
+                               required
+                               placeholder="Enter smoking">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="swimming_pool">Базен</label>
+                        <input type="text"
+                               style="margin-left: 216px"
+                               class="form-control"
+                               id="swimming_pool"
+                               name="swimming_pool"
+                               th:value="(${hotel} != null ? ${hotel.getSwimming_pool()} : '')"
+                               required
+                               placeholder="Enter swimming_pool">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="building">Зграда</label>
+                        <input type="text"
+                               style="margin-left: 211px"
+                               class="form-control"
+                               id="building"
+                               name="building"
+                               th:value="(${hotel} != null ? ${hotel.getBuilding()} : '')"
+                               required
+                               placeholder="Enter building">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="linkMapa">Линк за мапа</label>
+                        <input type="text"
+                               style="margin-left: 170px"
+                               class="form-control"
+                               id="linkMapa"
+                               name="linkMapa"
+                               th:value="(${hotel} != null ? ${hotel.getLinkMapa()} : '')"
+                               required
+                               placeholder="Enter Link for map">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="pets_allowed">Дозвола за домашни миленичиња</label>
+                        <input type="text" style="margin-left: 30px"
+                               class="form-control"
+                               id="pets_allowed"
+                               name="pets_allowed"
+                               th:value="(${hotel} != null ? ${hotel.getPets_allowed()} : '')"
+                               required
+                               placeholder="Enter Pets allowed">
+                    </div>
+                    <br>
+                    <button id="submit" type="submit" class="btn btn-primary">Додади &nbsp;</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a type="button" class="btn btn-primary"
+                       style="text-decoration: none; font-size: 18px; color: brown" href="/hotels"> &nbsp;&nbsp;
+                        Назад</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</th:block>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter</title>
+    <style>
+        /*.content{*/
+        /*    background-image: url("img/pozadina.jpg");*/
+        /*    background-repeat: no-repeat;*/
+        /*    !*background-attachment: fixed;*!*/
+        /*    background-size: 1522px 715px;*/
+        /*    width: 1200px;*/
+        /*    height: 708px;*/
+        /*}*/
+    </style>
+</head>
+<body style="background: bisque" class="content">
+<footer style="margin-left: 490px">
+    <a class="nav-link active" href="/home"
+       style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+        Почетна
+    </a>
+    <a class="nav-link active" href="/hotels"
+       style="margin-left: 60px; text-decoration: none; font-size: 20px; font-weight: bold; color: crimson">
+        Хотели
+    </a>
+
+    <a class="btn btn-success btn-sm-ml-3" href="/aboutUs"
+       style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+        <i class="fa fa-shopping-cart"></i>За нас
+    </a>
+
+    <a class="btn btn-light btn-sm-ml-3" href="/contact"
+       style="margin-left: 60px; text-decoration: none;font-size: 20px; font-weight: bold; color: saddlebrown">
+        <i class="fa fa-shopping-cart"></i>Контакт
+    </a>
+</footer>
+<br>
+<br>
+<div style="margin-left: 528px">
+    <br>
+    <br>
+    <h2>Избери филтер:</h2>
+    <br>
+    <ul>
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterInternetAccess'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    интернет</i>
+            </a>
+        </li>
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterSwimmingPool'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    базени</i>
+            </a>
+        </li>
+
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterSmoking'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    дозвола да се пуши</i>
+            </a>
+        </li>
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterPetsAllowed'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    дозвола за домашни миленици</i>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+
+    <table class="table table-striped" style="margin-left: -508px">
+        <thead>
+        <tr>
+            <th scope="col"> Име на хотелот</th>
+            <th scope="col"> Веб сајт</th>
+            <th scope="col"> Оператор</th>
+            <th scope="col"> E-маил</th>
+            <th scope="col"> Град</th>
+            <th scope="col"> Улица</th>
+            <th scope="col"> Број</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="hotel : ${hotelsInternet}">
+            <td th:text=" ' '+${hotel.getName()}"></td>
+            <td th:text=" ' '+ ${hotel.getWeb_site()}"></td>
+            <td th:text=" ' '+${hotel.getOperator()}"></td>
+            <td th:text=" ' '+${hotel.getEmail()}"></td>
+            <td th:text=" ' '+${hotel.getCity()}"></td>
+            <td th:text=" '   '+${hotel.getStreet()}"></td>
+            <td th:text=" ' '+${hotel.getHouse_number()}"></td>
+
+            <td class="text-right">
+
+                <br>
+                <a class="btn btn-sm btn-info"
+                   th:href="@{'/hotels/showHotels/{id}' (id=${hotel.getId()})}">
+                    <i class="fa fa-trash">
+                        <button>Прикажи детали за хотелот</button>
+                    </i>
+                </a>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

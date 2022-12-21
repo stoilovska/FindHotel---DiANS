@@ -80,36 +80,6 @@ public class HotelServiceImpl implements HotelService {
         return hotelRepository.findHotelByStreet(street);
     }
 
-//    @Override
-//    public void updateHotel(Long Id, Hotel hotel) {
-//        Hotel hotel1 = hotelRepository.getHotelById(Id);
-//
-////        name , lon , lat , web_site , operator , opening_hours , email , phone , country , city , street , house_number;
-//
-////        internet_access ,  stars , rooms , smoking , swimming_pool , building
-//
-//        Hotel hotel2 = hotel1;
-//        hotel2.setName(hotel.getName());
-//        hotel2.setLon(hotel.getLon());
-//        hotel2.setLat(hotel.getLat());
-//        hotel2.setWeb_site(hotel.getWeb_site());
-//        hotel2.setOperator(hotel.getOperator());
-//        hotel2.setOpening_hours(hotel.getOpening_hours());
-//        hotel2.setEmail(hotel.getEmail());
-//        hotel2.setPhone(hotel.getPhone());
-//        hotel2.setCountry(hotel.getCountry());
-//        hotel2.setCity(hotel.getCity());
-//        hotel2.setStreet(hotel.getStreet());
-//        hotel2.setHouse_number(hotel.getHouse_number());
-//        hotel2.setInternet_access(hotel.getInternet_access());
-//        hotel2.setStars(hotel.getStars());
-//        hotel2.setRooms(hotel.getRooms());
-//        hotel2.setSmoking(hotel.getSmoking());
-//        hotel2.setSwimming_pool(hotel.getSwimming_pool());
-//        hotel2.setBuilding(hotel.getBuilding());
-//        hotelRepository.save(hotel2);
-//    }
-
     @Override
     public void deleteHotel(Long Id) {
 

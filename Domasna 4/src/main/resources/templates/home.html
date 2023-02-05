@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style th:inline="text">
+
+
+        footer {
+            margin: auto;
+        }
+
+    </style>
+</head>
+<!--<body style="background-image: url('img/pozadina.jpg'); background-repeat: no-repeat; background-size: 1522px 717px; width: 1200px;-->
+<!-- <body class="container" style="background: url('../static/images/pozadina.jpg') center no-repeat; background-size:cover; padding:200px;">-->
+<!-- <img th:src="@{/images/pozadina.jpg}">-->
+
+<body class="container">
+
+<div>
+    <header style="margin-left: 7px;margin-top: -7px; background: bisque; width: 1500px; height: 58px">
+
+        <div style="padding-top: 18px">
+            <a class="nav-link active" href="/api/home"
+               style="margin-left: 58px; text-decoration: none; font-size: 28px; font-weight: bold; color: crimson; font-family: 'Brush Script MT'; letter-spacing: 2px;">
+                FindHotel
+            </a>
+        </div>
+
+        <div style="margin-top: -30px">
+            <a class="nav-link active" href="/api/home"
+               style="margin-left: 518px; text-decoration: none; font-size: 21px; font-weight: bold; color: crimson">
+                Почетна
+            </a>
+            <a class="nav-link active" href="/hotels"
+               style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: saddlebrown">
+                Хотели
+            </a>
+
+            <a class="btn btn-success btn-sm-ml-3" href="/api/aboutUs"
+               style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: saddlebrown">
+                <i class="fa fa-shopping-cart"></i>За нас
+            </a>
+
+            <a class="btn btn-light btn-sm-ml-3" href="/api/contact"
+               style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: saddlebrown">
+                <i class="fa fa-shopping-cart"></i>Контакт
+            </a>
+
+            <br>
+        </div>
+    </header>
+
+    <div style="margin-left: 538px; margin-top: 126px; font-family: 'Brush Script MT'; background: pink;  border-radius: 25px;height: 388px; width: 598px">
+        <br>
+        <br>
+
+        <div style="font-size: 18px; margin-left: 20px; ">
+
+            <h3 style="margin-left: 108px; font-family: 'Brush Script MT'">Одберете го најдобриот хотел за вас</h3>
+            <br>
+
+            Кликнете <a href="/hotels" style="text-decoration: none; color: black; font-weight: bold; font-size: 20px;font-family: 'Brush Script MT'">ОВДЕ</a> за да Ви се
+            прикажат сите достапни хотели во Скопје.
+
+            <br>
+
+            <ul style="font-family: 'Brush Script MT'; font-size: 20px">
+                <li>
+                    Ви нудиме и приказ на мапа
+                </li>
+                <br>
+                <li>
+                    Сите хотели во Скопје
+                </li>
+                <br>
+                <li>
+                    Можност за додавање на новоизграден хотел
+                </li>
+                <br>
+                <li>
+                    Приказ на сите достапни детали за избраниот хотел
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer style="margin-top: 108px; margin-left: 5px">
+        <hr>
+        <span style="margin-left: 728px"> ©2022. FindHotel Скопје</span>
+    </footer>
+</div>
+</body>
+</html>

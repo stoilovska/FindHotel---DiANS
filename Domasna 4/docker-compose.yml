@@ -1,0 +1,45 @@
+version: '3.8'
+services:
+  backend:
+    image: hotels_backend.jar
+    ports:
+      - "9091:9091"
+    restart: always
+    networks:
+      - spring-postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres_user
+      - POSTGRES_PASSWORD=teodora
+      - POSTGRES_DB=hotel
+    depends_on:
+      - db
+
+
+  authmicroservice:
+    image: hotels-auth.jar
+    build: .
+    depends_on:
+      - backend
+    restart: always
+    ports:
+      - "9092:9092"
+
+  db:
+    image: hotels-database.jar
+    restart: always
+    secrets:
+      - teodora
+    networks:
+      - spring-postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=teodora
+      - POSTGRES_DB=hotel
+    ports:
+      - "5432:5432"
+volumes:
+  db:

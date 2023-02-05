@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter hotel</title>
+</head>
+<body>
+<header style="margin-left: 7px;margin-top: -7px; background: bisque; width: 1500px; height: 58px">
+    <div style="padding-top: 18px">
+        <a class="nav-link active" href="/api/home"
+           style="margin-left: 58px; text-decoration: none; font-size: 28px; font-weight: bold; color: crimson; font-family: 'Brush Script MT'; letter-spacing: 2px;">
+            FindHotel
+        </a>
+    </div>
+
+    <div style="margin-top: -30px">
+        <a class="nav-link active" href="/api/home"
+           style="margin-left: 518px; text-decoration: none; font-size: 21px; font-weight: bold; color: saddlebrown">
+            Почетна
+        </a>
+        <a class="nav-link active" href="/hotels"
+           style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: crimson">
+            Хотели
+        </a>
+
+        <a class="btn btn-success btn-sm-ml-3" href="/api/aboutUs"
+           style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: saddlebrown">
+            <i class="fa fa-shopping-cart"></i>За нас
+        </a>
+
+        <a class="btn btn-light btn-sm-ml-3" href="/api/contact"
+           style="margin-left: 110px; text-decoration: none;font-size: 21px; font-weight: bold; color: saddlebrown">
+            <i class="fa fa-shopping-cart"></i>Контакт
+        </a>
+
+        <br>
+    </div>
+</header>
+
+<br>
+
+<div style="margin-left: 2px; margin-top: 30px; background: pink; border-radius: 25px;">
+    <div style="margin-left: 508px">
+    <br>
+    <br>
+    <h2 style="margin-left: 20px">Избери филтер:</h2>
+    <br>
+    <ul>
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterInternetAccess'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    интернет</i>
+            </a>
+        </li>
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterSwimmingPool'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    базени</i>
+            </a>
+        </li>
+
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterSmoking'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    дозвола да се пуши</i>
+            </a>
+        </li>
+        <br>
+
+        <li>
+            <a class="btn btn-sm btn-info" style="text-decoration: none"
+               th:href="@{'/hotels/filterPetsAllowed'}">
+                <i class="fa fa-trash" style="font-size: 20px;color: black">Исфилтрирај само хотели кои имаат
+                    дозвола за домашни миленици</i>
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <br>
+
+        <div class="col mb-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-12" style="margin-left: 30px; margin-top: -30px">
+                    <a style="text-decoration: none" href="/hotels/add-form" class="btn btn-block btn-dark">
+                        <button onmouseover="this.style.backgroundColor='aquamarine';this.style.color='black'; "
+                                onmouseout="this.style.backgroundColor='buttonface';this.style.color='black'; return true;"
+                                style="border-radius: 10px;">Додади нов хотел (кој е во Скопје)
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+    <table class="table table-striped" style="margin-left: -510px">
+        <thead>
+        <tr>
+            <th scope="col"> Име на хотелот</th>
+            <th scope="col"> Веб сајт</th>
+            <th scope="col"> Домашни миленици</th>
+            <th scope="col"> E-маил</th>
+            <th scope="col"> Град</th>
+            <th scope="col"> Улица</th>
+            <th scope="col"> Број</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="hotel : ${hotelsPetsAllowed}">
+            <td th:text=" ' '+${hotel.getName()}"></td>
+            <td th:text=" ' '+ ${hotel.getWeb_site()}"></td>
+            <td th:text=" ' '+${hotel.getPets_allowed()}"></td>
+            <td th:text=" ' '+${hotel.getEmail()}"></td>
+            <td th:text=" ' '+${hotel.getCity()}"></td>
+            <td th:text=" '   '+${hotel.getStreet()}"></td>
+            <td th:text=" ' '+${hotel.getHouse_number()}"></td>
+
+            <td class="text-right">
+
+                <br>
+                <a class="btn btn-sm btn-info"
+                   th:href="@{'/hotels/showHotels/{id}' (id=${hotel.getId()})}">
+                    <i class="fa fa-trash">
+                        <button onmouseover="this.style.backgroundColor='aquamarine';this.style.color='black'; "
+                                onmouseout="this.style.backgroundColor='buttonface';this.style.color='black'; return true;"
+                                style="border-radius: 10px; margin-left: -10px">Прикажи детали за хотелот
+                        </button>
+                    </i>
+                </a>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<footer style="margin-top: 20px">
+    <hr>
+    <span style="margin-left: 728px"> ©2022. FindHotel Скопје</span>
+</footer>
+
+</body>
+</html>
